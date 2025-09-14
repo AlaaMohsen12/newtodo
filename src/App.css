@@ -1,0 +1,130 @@
+#root {
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.home {
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+
+.Link-ToDO {
+  border: none;
+  color: white;
+  background-color: rgb(255, 0, 0);
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-block: 20px;
+  width: 18pc;
+  height: 4rem;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.home-todo {
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+
+.input-butt {
+  margin-bottom: 1rem;
+  background-color: rgb(255, 255, 255);
+  width: fit-content;
+  margin: auto;
+}
+
+input {
+  border: none;
+  outline: none;
+  height: 3rem;
+  width: 400px;
+  color: rgb(255, 255, 255);
+  padding-left: 5px;
+  caret-color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(37, 37, 37);
+
+  &::placeholder {
+    padding-left: 5px;
+    text-transform: capitalize;
+  }
+}
+.add {
+  width: 5rem;
+  height: 3rem;
+  margin-inline: 3px;
+  border: none;
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  font-size: 17px;
+  background-color: green;
+}
+
+.remove-all {
+  width: 6rem;
+  border: none;
+  height: 3rem;
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: red;
+}
+
+.home-resulats {
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 0.6rem;
+  padding-inline: 0.5rem;
+  padding-block: 1rem;
+  width: 60%;
+}
+
+.resultData {
+  color: white;
+  text-transform: capitalize;
+}
+
+.Removing-edit {
+  & .edit {
+    color: rgb(252, 252, 252);
+    margin-right: 3px;
+    padding: 1rem;
+    background-color: rgba(199, 169, 0, 0.555);
+    border: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  & .remove {
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    background-color: red;
+    text-transform: capitalize;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  & .save {
+    color: rgb(255, 255, 255);
+    background-color: green;
+    padding: 1rem;
+    text-transform: capitalize;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 3px;
+  }
+
+  & .active {
+    color: rgb(163, 163, 163);
+  }
+}
