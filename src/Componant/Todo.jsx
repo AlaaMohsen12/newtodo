@@ -16,9 +16,7 @@ function Todo() {
 
   const [listValue, SetListValue] = useState(() => {
     const resultLocal = localStorage.getItem("data");
-    return resultLocal == localStorage.getItem("data")
-      ? JSON.parse(resultLocal)
-      : [];
+    return resultLocal ? JSON.parse(resultLocal) : [];
   });
   const [text, setText] = useState("");
   let changeValueText = useCallback((e) => {
