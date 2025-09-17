@@ -13,12 +13,11 @@ export const creatButton = createContext();
 export const creatValue = createContext();
 function Todo() {
   const navigate = useNavigate();
-  let resultLocal = localStorage.getItem("data");
+  const resultLocal = localStorage.getItem("data");
   const [listValue, SetListValue] = useState(
     resultLocal == localStorage.getItem("data") ? JSON.parse(resultLocal) : []
   );
   const [text, setText] = useState("");
-  // const [ides, setIdes] = useState(0);
   let changeValueText = useCallback((e) => {
     setText(e.target.value);
   }, []);
@@ -51,7 +50,7 @@ function Todo() {
 
   const SaveValue = useMemo(
     () => ({
-      listValue: listValue,
+      all: listValue,
       setText: setText,
       text: text,
       update: update,

@@ -2,8 +2,9 @@ import React, { useContext } from "react";
 import { creatValue } from "./Todo";
 import { useState } from "react";
 function Dataa() {
-  const { listValue, setText, text, update, SetListValue } =
-    useContext(creatValue);
+  const { all, setText, text, update, SetListValue } = useContext(creatValue);
+
+  // const listValue = useContext(creatValue);
 
   let styles = {
     backgroundColor: "rgb(163, 163, 163)",
@@ -34,27 +35,7 @@ function Dataa() {
     setPrse({ [id]: {} });
   };
 
-  // let changeSave = (id) => {
-  //   setPrse((prev) => {
-  //     prev.map((itmes) => {
-  //       return itmes.id == id
-  //         ? { ...itmes, style: { color: "red" } }
-  //         : { ...itmes, style: {} };
-  //     });
-  //   });
-  // };
-
-  // let changeEadit = (id) => {
-  //   setPrse((prev) => {
-  //     prev.map((itmes) => {
-  //       return itmes.id == id
-  //         ? { ...itmes, style: { color: "green" } }
-  //         : { ...itmes, style: {} };
-  //     });
-  //   });
-  // };
-
-  let remove = (id) => SetListValue(listValue.filter((itme) => itme.id !== id)); // هنا معناها ال مش بتساويه هتهولي وال بتساويه شيلو
+  let remove = (id) => SetListValue(all.filter((itme) => itme.id !== id)); // هنا معناها ال مش بتساويه هتهولي وال بتساويه شيلو
 
   return (
     <>
@@ -66,39 +47,61 @@ function Dataa() {
           alignItems: "center",
         }}
       >
-        {listValue.map((e) => (
-          <div className="home-resulats" key={e.id}>
-            <h3 className="resultData">{e.values}</h3>
-            <div className="Removing-edit">
-              <button
-                className="edit"
-                style={dataPrS[e.id]}
-                onClick={() => {
-                  edit(e.values, e.id);
-                }}
-              >
-                edit
-              </button>
+        {all.map((e) => {
+          return (
+            <div className="home-resulats" key={e.id}>
+              <h3 className="resultData">{e.values}</h3>
+              <div className="Removing-edit">
+                <button
+                  className="edit"
+                  style={dataPrS[e.id]}
+                  onClick={() => {
+                    edit(e.values, e.id);
+                  }}
+                >
+                  edit
+                </button>
 
-              <button
-                className="save"
-                style={dataPrSs[e.id] || dataPrSs}
-                onClick={() => {
-                  save(e.id);
-                  console.log(e.id);
-                }}
-              >
-                save
-              </button>
-              <button className="remove" onClick={() => remove(e.id)}>
-                remove
-              </button>
+                <button
+                  className="save"
+                  style={dataPrSs[e.id] || dataPrSs}
+                  onClick={() => {
+                    save(e.id);
+                    console.log(e.id);
+                  }}
+                >
+                  save
+                </button>
+                <button className="remove" onClick={() => remove(e.id)}>
+                  remove
+                </button>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </>
   );
 }
 
 export default React.memo(Dataa);
+
+// let changeSave = (id) => {
+//   setPrse((prev) => {
+//     prev.map((itmes) => {
+//       return itmes.id == id
+//         ? { ...itmes, style: { color: "red" } }
+//         : { ...itmes, style: {} };
+//     });
+//   });
+// };
+
+// let changeEadit = (id) => {
+//   setPrse((prev) => {
+//     prev.map((itmes) => {
+//       return itmes.id == id
+//         ? { ...itmes, style: { color: "green" } }
+//         : { ...itmes, style: {} };
+//     });
+//   });
+// };
