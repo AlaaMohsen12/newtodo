@@ -15,7 +15,7 @@
   "dependencies": {
     "gh-pages": "^6.3.0",
     "react": "^19.1.1",
-    "homepage":"https://AlaaMohsen12.github.io/newtodo",
+    "homepage":"https://alaamohsen12.github.io/newtodo/",
     "react-dom": "^19.1.1",
     "react-router-dom": "^6.30.1"
   },
