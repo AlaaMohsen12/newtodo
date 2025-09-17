@@ -5,7 +5,12 @@ function Button() {
   const { fun, removeAll } = useContext(creatButton);
   return (
     <>
-      <button className="add" onClick={fun}>
+      <button
+        className="add"
+        onClick={() => {
+          fun();
+        }}
+      >
         add
       </button>
       <button className="remove-all" onClick={removeAll}>

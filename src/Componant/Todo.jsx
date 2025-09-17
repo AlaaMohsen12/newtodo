@@ -56,8 +56,9 @@ function Todo() {
       text: text,
       update: update,
       SetListValue: SetListValue,
+  
     }),
-    [listValue, text]
+    [listValue, text,]
   );
   return (
     <>

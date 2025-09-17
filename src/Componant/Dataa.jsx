@@ -1,11 +1,12 @@
-import React, { useContext } from "react";
+import ButtonAddRemove from "./buttonAddRemove";
+import React, { useContext, createContext } from "react";
+// eslint-disable-next-line react-refresh/only-export-components
+export const buttonResult = createContext();
+
 import { creatValue } from "./Todo";
 import { useState } from "react";
 function Dataa() {
   const { all, setText, text, update, SetListValue } = useContext(creatValue);
-
-  // const listValue = useContext(creatValue);
-
   let styles = {
     backgroundColor: "rgb(163, 163, 163)",
     pointerEvents: "none",
@@ -13,9 +14,6 @@ function Dataa() {
   };
   const [dataPrS, setPrse] = useState({});
   const [dataPrSs, setPrses] = useState(styles);
-
-  // const [styleEdit, setStyleEdit] = useState({});
-  // const [styleSave, setStyleSave] = useState({});
 
   let edit = (value, id) => {
     setText(value);
@@ -48,33 +46,22 @@ function Dataa() {
         }}
       >
         {all.map((e) => {
+          let objectDataButton = {
+            dataPrS: dataPrS,
+            dataPrSs: dataPrSs,
+            edit: edit,
+            save: save,
+            remove: remove,
+            e: e,
+          };
+
           return (
             <div className="home-resulats" key={e.id}>
               <h3 className="resultData">{e.values}</h3>
               <div className="Removing-edit">
-                <button
-                  className="edit"
-                  style={dataPrS[e.id]}
-                  onClick={() => {
-                    edit(e.values, e.id);
-                  }}
-                >
-                  edit
-                </button>
-
-                <button
-                  className="save"
-                  style={dataPrSs[e.id] || dataPrSs}
-                  onClick={() => {
-                    save(e.id);
-                    console.log(e.id);
-                  }}
-                >
-                  save
-                </button>
-                <button className="remove" onClick={() => remove(e.id)}>
-                  remove
-                </button>
+                <buttonResult.Provider value={objectDataButton}>
+                  <ButtonAddRemove />
+                </buttonResult.Provider>
               </div>
             </div>
           );
@@ -105,3 +92,33 @@ export default React.memo(Dataa);
 //     });
 //   });
 // };
+
+// {
+//   /* <button
+//                   className="edit"
+//                   style={dataPrS[e.id]}
+//                   onClick={() => {
+//                     edit(e.values, e.id);
+//                   }}
+//                 >
+//                   edit
+//                 </button> */
+// }
+
+// {
+//   /* <button
+//                   className="save"
+//                   style={dataPrSs[e.id] || dataPrSs}
+//                   onClick={() => {
+//                     save(e.id);
+//                     console.log(e.id);
+//                   }}
+//                 >
+//                   save
+//                 </button> */
+// }
+// {
+//   /* <button className="remove" onClick={() => remove(e.id)}>
+//                   remove
+//                 </button> */
+// }
