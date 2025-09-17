@@ -1,6 +1,6 @@
 import "./App.css";
 import FirstPage from "./Componant/FirstPage";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Todo from "./Componant/Todo";
 function App() {
   return (
