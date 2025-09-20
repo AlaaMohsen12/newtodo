@@ -31,12 +31,6 @@
 
 }
 
-.input-butt {
-  margin-bottom: 1rem;
-  background-color: rgb(255, 255, 255);
-  width: fit-content;
-  margin: auto;
-}
 
 input {
   border: none;
@@ -93,6 +87,9 @@ input {
   padding-inline: 0.5rem;
   padding-block: 1rem;
   width: 60%;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 4px;
 }
 
 .resultData {
@@ -101,9 +98,11 @@ input {
 }
 
 .Removing-edit {
+  display: flex;
+  gap: 3px;
+
   & .edit {
     color: rgb(252, 252, 252);
-    margin-right: 3px;
     padding: 1rem;
     background-color: rgba(199, 169, 0, 0.555);
     border: none;
@@ -130,7 +129,7 @@ input {
     border: none;
     font-weight: bold;
     cursor: pointer;
-    margin-right: 3px;
+
   }
 
   & .active {
@@ -142,8 +141,730 @@ input {
 
 /* quary */
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (width <=375px) {
+
+
+
+@media only screen and (width <=1400px) {
+  .input-butt {
+    padding-block: 7px;
+
+
+    & input {
+      width: 83%;
+      height: 4rem;
+      font-size: medium;
+    }
+
+    ;
+
+    & .add {
+      width: 3rem;
+      height: 4rem;
+      font-size: medium;
+    }
+
+    ;
+
+    & .remove-all {
+      width: 6rem;
+      height: 4rem;
+      font-size: medium;
+    }
+
+  }
+
+
+  .home-resulats {
+    max-width: 100%;
+    width: 90%;
+
+    & .resultData {
+      font-size: 18px
+    }
+
+    ;
+
+    & .Removing-edit {
+
+
+      & .edit {
+        padding: 20px;
+        font-size: medium;
+      }
+
+      & .save {
+        padding: 20px;
+        font-size: medium;
+      }
+
+      & .remove {
+        padding: 20px;
+        font-size: medium;
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (width <=1200px) {
+  .input-butt {
+
+    padding-block: 7px;
+
+
+
+
+    & input {
+      width: 80%;
+      height: 4rem;
+      font-size: medium;
+    }
+
+    ;
+
+    & .add {
+      width: 3rem;
+      height: 4rem;
+      font-size: medium;
+    }
+
+    ;
+
+    & .remove-all {
+      width: 6rem;
+      height: 4rem;
+      font-size: medium;
+    }
+
+  }
+
+
+  .home-resulats {
+    max-width: 100%;
+    width: 90%;
+
+    & .resultData {
+      font-size: 18px
+    }
+
+    ;
+
+    & .Removing-edit {
+
+
+      & .edit {
+        padding: 20px;
+        font-size: medium;
+      }
+
+      & .save {
+        padding: 20px;
+        font-size: medium;
+      }
+
+      & .remove {
+        padding: 20px;
+        font-size: medium;
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (width <=800px) {
+  .input-butt {
+    background-color: rgb(82, 82, 82);
+    padding-block: 7px;
+    margin-inline: 2.4px;
+
+
+
+    & input {
+      width: 79%;
+      height: 4rem;
+      font-size: medium;
+    }
+
+    ;
+
+    & .add {
+      width: 3rem;
+      height: 4rem;
+      font-size: medium;
+    }
+
+    ;
+
+    & .remove-all {
+      width: 6rem;
+      height: 4rem;
+      font-size: medium;
+    }
+
+  }
+
+
+  .home-resulats {
+    max-width: 100%;
+    width: 90%;
+
+    & .resultData {
+      font-size: 18px
+    }
+
+    ;
+
+    & .Removing-edit {
+
+
+      & .edit {
+        padding: 20px;
+        font-size: medium;
+      }
+
+      & .save {
+        padding: 20px;
+        font-size: medium;
+      }
+
+      & .remove {
+        padding: 20px;
+        font-size: medium;
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (width <=750px) {
+  .input-butt {
+    background-color: rgb(82, 82, 82);
+    padding-block: 4px;
+    margin-inline: 2.4px;
+
+
+
+    & input {
+      width: 77.5%;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .add {
+      width: 3rem;
+      height: 3rem;
+      font-size: medium;
+    }
+
+    ;
+
+    & .remove-all {
+      width: 6rem;
+      height: 3rem;
+      font-size: medium;
+    }
+
+  }
+
+
+  .home-resulats {
+    max-width: 100%;
+    width: 90%;
+
+    & .resultData {
+      font-size: 18px
+    }
+
+    ;
+
+    & .Removing-edit {
+
+
+      & .edit {
+        padding: 20px;
+        font-size: medium;
+      }
+
+      & .save {
+        padding: 20px;
+        font-size: medium;
+      }
+
+      & .remove {
+        padding: 20px;
+        font-size: medium;
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (width <=700px) {
+  .input-butt {
+    background-color: rgb(82, 82, 82);
+    padding-block: 4px;
+    margin-inline: 2.3px;
+
+
+
+    & input {
+      width: 78%;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .add {
+      width: 3rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .remove-all {
+      width: 5rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+  }
+
+
+  .home-resulats {
+    max-width: 100%;
+    width: 90%;
+
+    & .resultData {
+      font-size: 18px
+    }
+
+    ;
+
+    & .Removing-edit {
+
+
+      & .edit {
+        padding: 15px;
+      }
+
+      & .save {
+        padding: 15px;
+      }
+
+      & .remove {
+        padding: 15px;
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (width <=650px) {
+  .input-butt {
+    background-color: rgb(82, 82, 82);
+    padding-block: 4px;
+    margin-inline: 2.3px;
+
+
+
+    & input {
+      width: 76%;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .add {
+      width: 3rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .remove-all {
+      width: 5rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+  }
+
+
+  .home-resulats {
+    max-width: 100%;
+    width: 90%;
+
+    & .resultData {
+      font-size: 18px
+    }
+
+    ;
+
+    & .Removing-edit {
+
+
+      & .edit {
+        padding: 15px;
+      }
+
+      & .save {
+        padding: 15px;
+      }
+
+      & .remove {
+        padding: 15px;
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (width <=600px) {
+  .input-butt {
+    background-color: rgb(82, 82, 82);
+    padding-block: 4px;
+    margin-inline: 2.3px;
+
+
+
+    & input {
+      width: 74%;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .add {
+      width: 3rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .remove-all {
+      width: 5rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+  }
+
+
+  .home-resulats {
+    max-width: 100%;
+    width: 90%;
+
+    & .resultData {
+      font-size: 18px
+    }
+
+    ;
+
+    & .Removing-edit {
+
+
+      & .edit {
+        padding: 10px;
+      }
+
+      & .save {
+        padding: 10px;
+      }
+
+      & .remove {
+        padding: 10px;
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (width <=550px) {
+  .input-butt {
+    background-color: rgb(82, 82, 82);
+    padding-block: 4px;
+    margin-inline: 2.3px;
+
+
+
+    & input {
+      width: 72%;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .add {
+      width: 3rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .remove-all {
+      width: 5rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+  }
+
+
+  .home-resulats {
+    max-width: 100%;
+    width: 90%;
+
+    & .resultData {
+      font-size: 18px
+    }
+
+    ;
+
+    & .Removing-edit {
+
+
+      & .edit {
+        padding: 10px;
+      }
+
+      & .save {
+        padding: 10px;
+      }
+
+      & .remove {
+        padding: 10px;
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (width <=500px) {
+  .input-butt {
+    background-color: rgb(82, 82, 82);
+    padding-block: 3px;
+    margin-inline: 2.3px;
+
+
+
+    & input {
+      width: 70%;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .add {
+      width: 3rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .remove-all {
+      width: 5rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+  }
+
+
+  .home-resulats {
+    max-width: 100%;
+    width: 90%;
+
+    & .resultData {
+      font-size: 18px
+    }
+
+    ;
+
+    & .Removing-edit {
+
+
+      & .edit {
+        padding: 10px;
+      }
+
+      & .save {
+        padding: 10px;
+      }
+
+      & .remove {
+        padding: 10px;
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (width <=467px) {
+  .input-butt {
+    background-color: rgb(82, 82, 82);
+    padding-block: 3px;
+    margin-inline: 2px;
+
+
+    & input {
+      width: 67%;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .add {
+      width: 3rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .remove-all {
+      width: 5rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+  }
+
+
+  .home-resulats {
+    max-width: 100%;
+    width: 90%;
+
+    & .resultData {
+      font-size: 14px
+    }
+
+    ;
+
+    & .Removing-edit {
+
+
+      & .edit {
+        padding: 10px;
+      }
+
+      & .save {
+        padding: 10px;
+      }
+
+      & .remove {
+        padding: 10px;
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (width <=430px) {
+  .input-butt {
+    background-color: rgb(82, 82, 82);
+    padding-block: 3px;
+    margin-inline: 2px;
+
+
+    & input {
+      width: 64%;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .add {
+      width: 3rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .remove-all {
+      width: 5rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+  }
+
+
+  .home-resulats {
+    max-width: 100%;
+    width: 90%;
+
+    & .resultData {
+      font-size: 14px
+    }
+
+    ;
+
+    & .Removing-edit {
+
+
+      & .edit {
+        padding: 10px;
+      }
+
+      & .save {
+        padding: 10px;
+      }
+
+      & .remove {
+        padding: 10px;
+      }
+
+    }
+
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+
+
+
+
+
+
+
+@media only screen and (width <=390px) {
   .Link-ToDO {
     width: 13rem;
     font-size: large;
@@ -151,10 +872,12 @@ input {
 
   .input-butt {
     background-color: rgb(82, 82, 82);
-    padding: 2px;
+    padding-block: 3px;
+    margin-inline: 2px;
+
 
     & input {
-      width: auto;
+      width: 62%;
       height: 3rem;
       font-size: small;
     }
@@ -189,6 +912,7 @@ input {
 
     & .Removing-edit {
 
+
       & .edit {
         padding: 10px;
       }
@@ -206,14 +930,206 @@ input {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+
+
+
+@media only screen and (width <=375px) {
+  .Link-ToDO {
+    width: 13rem;
+    font-size: large;
+  }
+
+  .input-butt {
+    background-color: rgb(82, 82, 82);
+    padding-block: 3px;
+    margin-inline: 2px;
+
+
+    & input {
+      width: 61%;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .add {
+      width: 3rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .remove-all {
+      width: 5rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+  }
+
+  .home-resulats {
+    max-width: 100%;
+    width: 90%;
+
+    & .resultData {
+      font-size: 14px
+    }
+
+    ;
+
+    & .Removing-edit {
+
+
+      & .edit {
+        padding: 10px;
+      }
+
+      & .save {
+        padding: 10px;
+      }
+
+      & .remove {
+        padding: 10px;
+      }
+
+    }
+
+  }
+}
+
+@media only screen and (width <=360px) {
+  .Link-ToDO {
+    width: 13rem;
+    font-size: large;
+  }
+
+  .input-butt {
+    background-color: rgb(82, 82, 82);
+    padding-block: 3px;
+    margin-inline: 2px;
+
+
+    & input {
+      width: 59%;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .add {
+      width: 3rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .remove-all {
+      width: 5rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+  }
+
+  .home-resulats {
+    max-width: 100%;
+    width: 90%;
+
+    & .resultData {
+      font-size: 14px
+    }
+
+    ;
+
+    & .Removing-edit {
+
+
+      & .edit {
+        padding: 10px;
+      }
+
+      & .save {
+        padding: 10px;
+      }
+
+      & .remove {
+        padding: 10px;
+      }
+
+    }
+
+  }
+}
+
+@media only screen and (width <=300px) {
+  .Link-ToDO {
+    width: 13rem;
+    font-size: large;
+  }
+
+  .input-butt {
+    background-color: rgb(82, 82, 82);
+    padding-block: 3px;
+    margin-inline: 2px;
+
+
+    & input {
+      width: 50%;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .add {
+      width: 3rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+    ;
+
+    & .remove-all {
+      width: 5rem;
+      height: 3rem;
+      font-size: small;
+    }
+
+  }
+
+  .home-resulats {
+    max-width: 100%;
+    width: 90%;
+
+    & .resultData {
+      font-size: 14px
+    }
+
+    ;
+
+    & .Removing-edit {
+
+
+      & .edit {
+        padding: 10px;
+      }
+
+      & .save {
+        padding: 10px;
+      }
+
+      & .remove {
+        padding: 10px;
+      }
+
+    }
+
+  }
+}

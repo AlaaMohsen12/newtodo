@@ -1,11 +1,13 @@
 import "./App.css";
-import FirstPage from "./Componant/FirstPage";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import Todo from "./Componant/Todo";
+import FirstPage from "./Comp/FirstPage";
+import Todo from "./Comp/TodoS";
+// import Lojic from "./Comp/Lojic";
+
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/">
         <Routes>
           <Route path="/" element={<FirstPage />} />
           <Route path="/todo" element={<Todo />} />
